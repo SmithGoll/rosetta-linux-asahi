@@ -31,7 +31,7 @@ jobs:
           dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=170828 conv=notrunc
           dd if=<(printf '\x1f\x20\x03\xd5') of='rosetta' bs=1 seek=170856 conv=notrunc
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: patched
           path: rosetta
