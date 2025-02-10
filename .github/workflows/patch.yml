@@ -21,7 +21,7 @@ jobs:
           pkgutil --expand-full RosettaUpdateAuto.pkg RosettaUpdateAuto.pkg-expanded
           cp RosettaUpdateAuto.pkg-expanded/RosettaUpdateAuto.pkg/Payload/Library/Apple/usr/libexec/oah/RosettaLinux/rosetta ./rosetta
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: unpatched
           path: rosetta
